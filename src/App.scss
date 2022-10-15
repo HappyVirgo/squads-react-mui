@@ -1,0 +1,54 @@
+@import "./assets/variables/fonts.scss";
+@import "./assets/variables/colors.scss";
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: $mainFont;
+  color: $white;
+  background-color: $bg-dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.dark-btn {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-width: 36px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 12px !important;
+  color: $white !important;
+  background-color: $btn-dark !important;
+}
+
+.blue-btn {
+  border-radius: 12px !important;
+  font-family: $mainFont !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  background-color: $blue !important;
+}
