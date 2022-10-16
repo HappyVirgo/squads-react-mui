@@ -3,7 +3,7 @@
 
 .header-menu {
   .MuiMenu-paper {
-    min-width: 184px;
+    min-width: 186px;
     margin-top: 16px;
     padding: 8px 0;
     border: 1px solid $border-dark;
@@ -21,7 +21,10 @@
     line-height: 20px;
   }
 
-  .MuiSvgIcon-root {
-    width: 17px;
+  .menu-icon {
+    width: 18px;
+    height: auto;
+    fill: $white;
+    margin-right: 12px;
   }
 }

@@ -1,40 +1,30 @@
 import { FC } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@mui/material'
-import { Home } from '@mui/icons-material'
-import { LogoIcon, LogoMobile } from '../../assets/icons'
+import ConnectButton from '../connect-button'
 import HeaderMenu from '../header-menu'
+import Logo from '../../assets/images/logo.svg'
+import LogoMobile from '../../assets/images/logo-mobile.svg'
+import HomeIcon from '../../assets/images/home-icon.svg'
 import './header.scss'
 
 const Header: FC = () => {
   return (
     <header className='header d-flex align-items-center'>
-      <div className='d-none d-lg-block'>
-        <Link to='/'>
-          <LogoIcon />
-        </Link>
-      </div>
-      <div className='d-lg-none me-auto'>
-        <Link to='/'>
-          <LogoMobile />
-        </Link>
-      </div>
+      <Link to='/' className='d-none d-lg-block'>
+        <img src={Logo} width={130} height={40} alt='logo' />
+      </Link>
+      <Link to='/' className='d-lg-none me-auto'>
+        <img src={LogoMobile} width={30} height={40} alt='logo' />
+      </Link>
 
-      <div className='d-none d-lg-block ms-3 me-auto'>
-        <Link to='/'>
-          <Button className='dark-btn'>
-            <Home></Home>
-          </Button>
-        </Link>
-      </div>
+      <Link to='/' className='d-none d-lg-block ms-3 me-auto'>
+        <Button className='dark-btn'>
+          <img src={HomeIcon} width={20} height={20} alt='home' />
+        </Button>
+      </Link>
 
-      <Button
-        variant='contained'
-        className='blue-btn me-2'
-      >
-        Connect wallet
-      </Button>
-
+      <ConnectButton />
       <HeaderMenu />
     </header >
   )

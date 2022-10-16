@@ -1,12 +1,50 @@
 import { FC, useState } from 'react'
 import { Button, Menu, MenuItem } from '@mui/material'
-import { MoreHoriz, GitHub, InsertDriveFileOutlined, Twitter } from '@mui/icons-material'
-import { DiscordIcon, SquadsIcon } from '../../assets/icons'
+import { MoreHoriz } from '@mui/icons-material'
+import GithubIcon from '../../assets/images/github-icon.svg'
+import DocsIcon from '../../assets/images/docs-icon.svg'
+import TwitterIcon from '../../assets/images/twitter-icon.svg'
+import DiscordIcon from '../../assets/images/discord-icon.svg'
+import SquadsIcon from '../../assets/images/squads-icon.svg'
 import './header-menu.scss'
 
-const HeadMenu: FC = () => {
+const HeaderMenuItems = [
+  {
+    name: 'github',
+    title: 'Github',
+    icon: GithubIcon,
+    link: 'https://github.com/squads-dapp/squads-mpl',
+  },
+  {
+    name: 'docs',
+    title: 'Docs',
+    icon: DocsIcon,
+    link: 'https://docs.squads.so/squads-v3-docs',
+  },
+  {
+    name: 'twitter',
+    title: 'Twitter',
+    icon: TwitterIcon,
+    link: 'https://twitter.com/SquadsProtocol',
+  },
+  {
+    name: 'discord',
+    title: 'Discord',
+    icon: DiscordIcon,
+    link: 'https://discord.gg/Qwhew4M4RS',
+  },
+  {
+    name: 'squads',
+    title: 'Squads V2',
+    icon: SquadsIcon,
+    link: 'https://app.squads.so',
+  },
+]
+
+const HeaderMenu: FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const open = Boolean(anchorEl)
+
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   }
@@ -24,8 +62,9 @@ const HeadMenu: FC = () => {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        <MoreHoriz></MoreHoriz>
+        <MoreHoriz />
       </Button>
+
       <Menu
         className='header-menu'
         id='header-menu'
@@ -36,39 +75,19 @@ const HeadMenu: FC = () => {
           'aria-labelledby': 'header-menu-button',
         }}
       >
-        <MenuItem>
-          <a href='https://github.com/squads-dapp/squads-mpl' target='_blank' rel='noreferrer'>
-            <GitHub />
-            <span className='ms-3'>Github</span>
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a href='https://docs.squads.so/squads-v3-docs' target='_blank' rel='noreferrer'>
-            <InsertDriveFileOutlined />
-            <span className='ms-3'>Docs</span>
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a href='https://twitter.com/SquadsProtocol' target='_blank' rel='noreferrer'>
-            <Twitter />
-            <span className='ms-3'>Twitter</span>
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a href='https://discord.gg/Qwhew4M4RS' target='_blank' rel='noreferrer'>
-            <DiscordIcon />
-            <span className='ms-3'>Discord</span>
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a href='https://app.squads.so' target='_blank' rel='noreferrer'>
-            <SquadsIcon />
-            <span className='ms-3'>Squads V2</span>
-          </a>
-        </MenuItem>
+        {
+          HeaderMenuItems.map((el, idx) => (
+            <a key={idx} href={el.link} target='_blank' rel='noreferrer'>
+              <MenuItem>
+                <img src={el.icon} className='menu-icon' alt={el.name} />
+                <span>{el.title}</span>
+              </MenuItem>
+            </a>
+          ))
+        }
       </Menu>
     </>
   )
 }
 
-export default HeadMenu
+export default HeaderMenu

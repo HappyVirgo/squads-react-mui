@@ -11,6 +11,7 @@ body {
 
 * {
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 h1,
@@ -50,5 +51,18 @@ a {
   font-size: 14px !important;
   font-weight: 600 !important;
   text-transform: none !important;
+  color: $white !important;
   background-color: $blue !important;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  margin: auto;
+  border: 2px solid $blue;
+  border-radius: 12px;
+  background-color: rgba(0, 163, 255, 0.06);
 }
