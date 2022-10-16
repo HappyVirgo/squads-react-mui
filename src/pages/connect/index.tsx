@@ -13,9 +13,9 @@ const Connect: FC = () => {
           <div className='icon-box'>
             <img src={CardIcon} width={48} height={48} alt='wallet' />
           </div>
-          <p>
+          <h3>
             Connect your wallet to see which Squads you are in
-          </p>
+          </h3>
           <ConnectButton />
         </div>
       </div>

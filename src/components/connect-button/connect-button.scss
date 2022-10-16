@@ -113,6 +113,7 @@
   line-height: 16px;
   background-color: $btn-dark;
   cursor: pointer;
+  transition: 0.3s;
 
   &:hover {
     border: 2px solid $blue;
