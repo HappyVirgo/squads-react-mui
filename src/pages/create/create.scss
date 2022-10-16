@@ -1,0 +1,114 @@
+@import "../../assets/variables/fonts.scss";
+@import "../../assets/variables/colors.scss";
+
+.create-container {
+  max-width: 1140px;
+  margin: 24px auto 0;
+  border: 1px solid $border-dark;
+  border-radius: 24px;
+  background-color: $modal-dark;
+}
+
+.create-header {
+  padding: 32px 48px;
+
+  .primary-title {
+    max-width: 445px;
+    margin-bottom: 12px;
+  }
+}
+
+.create-main {
+  margin: 24px -1px -1px;
+  padding: 32px;
+  border: 1px solid $border-dark;
+  border-radius: 24px;
+}
+
+.create-main-left {
+  // max-width: 405px;
+  margin-top: 24px;
+}
+
+.create-steps {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    width: 4px;
+    height: 96%;
+    border-radius: 1px;
+    background: rgba(45, 47, 51, 0.24);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: $btn-dark;
+    transition: 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba(9, 13, 20, 0.48);
+      transition: 0.3s;
+    }
+
+    &.active {
+      background-color: $blue;
+
+      &::before {
+        background-color: $white;
+      }
+    }
+  }
+
+  div {
+    width: calc(100% - 48px);
+    margin-left: 24px;
+  }
+
+  .text-dummy {
+    color: rgba(224, 224, 255, 0.8);
+  }
+}
+
+.create-main-right {
+  max-width: 540px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.create-box {
+  padding: 16px 24px;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  background-color: $btn-dark;
+
+  .secondary-title {
+    margin-bottom: 24px;
+    border-bottom: 1px solid $border-dark;
+  }
+}

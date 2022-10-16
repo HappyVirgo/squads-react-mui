@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material'
-import { DialogProps } from '@mui/material/Dialog'
 import { Close } from '@mui/icons-material'
 import LogoBlue from '../../assets/images/logo-blue.svg'
 import PhantomIcon from '../../assets/images/phantom-icon.svg'
@@ -51,9 +51,9 @@ const WalletItems = [
 ]
 
 const ConnectButton: FC = () => {
-  const [agreeDialogOpen, setAgreeDialogOpen] = useState(false)
-  const [connectDialogOpen, setConnectDialogOpen] = useState(false)
-  const [scroll, setScroll] = useState<DialogProps['scroll']>('paper')
+  const navigate = useNavigate()
+  const [agreeDialogOpen, setAgreeDialogOpen] = useState<boolean>(false)
+  const [connectDialogOpen, setConnectDialogOpen] = useState<boolean>(false)
 
   const openAgreeDialog = () => {
     setAgreeDialogOpen(true)
@@ -118,7 +118,7 @@ const ConnectButton: FC = () => {
         <DialogContent>
           {
             WalletItems.map((el, idx) => (
-              <div key={idx} className='wallet'>
+              <div key={idx} className='wallet' onClick={() => navigate('/squads')}>
                 <img src={el.icon} alt={el.name} />
                 <span>{el.title}</span>
               </div>

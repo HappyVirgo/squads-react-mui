@@ -66,18 +66,34 @@ a {
   background-color: rgba(0, 163, 255, 0.06);
 }
 
-.squad-container {
-  max-width: 856px;
-  margin: 28px auto;
-  padding: 0 8px;
-}
-
 .primary-title {
-  margin-left: 9px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   letter-spacing: -1px;
+}
+
+.secondary-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.detail-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(224, 224, 255, 0.8);
+}
+
+.squad-container {
+  max-width: 856px;
+  margin: 28px auto;
+  padding: 0 8px;
+
+  .primary-title {
+    margin-left: 9px;
+  }
 }
 
 .squad-content {
@@ -88,23 +104,14 @@ a {
   border-radius: 24px;
   background-color: $modal-dark;
 
-  h3 {
+  .secondary-title {
     max-width: 265px;
     margin: 24px auto 0;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
   }
 
-  p {
+  .detail-text {
     max-width: 200px;
     margin: 8px auto;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 20px;
-    color: rgba(224, 224, 255, 0.8);
   }
 
   .blue-btn {
