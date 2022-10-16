@@ -61,8 +61,39 @@ a {
   align-items: center;
   width: 96px;
   height: 96px;
-  margin: auto;
+  margin: 0 auto;
   border: 2px solid $blue;
   border-radius: 12px;
   background-color: rgba(0, 163, 255, 0.06);
+}
+
+.squad-container {
+  max-width: 870px;
+  margin: 28px auto;
+  padding: 0 15px;
+}
+
+.primary-title {
+  margin-left: 9px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1px;
+}
+
+.squad-content {
+  min-height: calc(100vh - 260px);
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid $border-dark;
+  border-radius: 24px;
+  background-color: $modal-dark;
+
+  p {
+    max-width: 265px;
+    margin: 24px auto;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
 }
