@@ -9,7 +9,7 @@ const App = () => {
       <Routes>
         <Route path='/connect-squad' element={<Connect />} />
         <Route path='/squads' element={<Squads />} />
-        <Route path='/create' element={<Create />} />
+        <Route path='/create-squad' element={<Create />} />
         <Route path='*' element={<Navigate to='/connect-squad' />} />
       </Routes>
     </BrowserRouter>

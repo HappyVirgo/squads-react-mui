@@ -13,7 +13,7 @@ const Squads: FC = () => {
       <div className='squad-container'>
         <div className='d-flex justify-content-between align-items-center'>
           <h2 className='primary-title'>Your Squads</h2>
-          <Button className='blue-btn px-3' onClick={() => navigate('/create')}>
+          <Button className='blue-btn px-3' onClick={() => navigate('/create-squad')}>
             <Add sx={{ fontSize: 22 }} />
             <span className='ms-2 me-1'>Create Squad</span>
           </Button>

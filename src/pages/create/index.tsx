@@ -21,7 +21,7 @@ const Create: FC = () => {
             </p>
           </div>
 
-          <div className='create-main d-flex'>
+          <div className='create-main d-flex justify-content-between'>
             <div className='create-main-left'>
               <CreateSteps step={step} setStep={setStep} />
             </div>
