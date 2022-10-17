@@ -2,15 +2,11 @@
 @import "../../assets/variables/colors.scss";
 
 .create-container {
-  max-width: 1140px;
   margin: 24px auto 0;
-  border: 1px solid $border-dark;
-  border-radius: 24px;
-  background-color: $modal-dark;
 }
 
 .create-header {
-  padding: 32px 48px;
+  padding: 16px 24px;
 
   .primary-title {
     max-width: 445px;
@@ -19,20 +15,40 @@
 }
 
 .create-main {
-  margin: 24px -1px -1px;
-  padding: 32px;
-  border: 1px solid $border-dark;
-  border-radius: 24px;
-
-  .create-main-left {
-    max-width: 405px;
-    margin-top: 24px;
-  }
+  padding: 24px 8px;
 
   .create-main-right {
-    max-width: 540px;
     width: 100%;
-    margin-left: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .create-container {
+    max-width: 1140px;
+    border: 1px solid $border-dark;
+    border-radius: 24px;
+    background-color: $modal-dark;
+  }
+
+  .create-header {
+    padding: 32px 48px;
+  }
+
+  .create-main {
+    margin: 24px -1px -1px;
+    padding: 32px;
+    border: 1px solid $border-dark;
+    border-radius: 24px;
+
+    .create-main-left {
+      max-width: 405px;
+      margin-top: 24px;
+    }
+
+    .create-main-right {
+      max-width: 540px;
+      margin-left: 20px;
+    }
   }
 }
 
@@ -124,7 +140,7 @@
     cursor: pointer;
     overflow: hidden;
     // background-image: url();
-    background-color: rgba(224, 224, 255, 0.12);
+    background-color: lightseagreen;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;

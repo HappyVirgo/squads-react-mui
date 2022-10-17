@@ -32,10 +32,8 @@ const CreateForm: FC = () => {
         </div>
 
         <div className='d-flex mt-4'>
-          <Button className='dark-btn flex-grow-1'>
-            Cancel
-          </Button>
-          <Button className='blue-btn flex-grow-1'>Next</Button>
+          <Button className='dark-btn flex-grow-1 me-2'>Cancel</Button>
+          <Button className='blue-btn flex-grow-1 ms-2'>Next</Button>
         </div>
       </form>
     </div>
