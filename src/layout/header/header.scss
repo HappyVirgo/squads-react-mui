@@ -4,6 +4,12 @@
   height: 72px;
   padding: 0 20px;
   border-bottom: 1px solid $border-dark;
+
+  .dark-btn {
+    min-width: 36px !important;
+    width: 36px !important;
+    height: 36px !important;
+  }
 }
 
 @media (min-width: 992px) {

@@ -4,12 +4,12 @@ import { Add } from '@mui/icons-material'
 import Layout from '../../layout'
 import LogoBlue from '../../assets/images/logo-blue.svg'
 
-const Home: FC = () => {
+const Vault: FC = () => {
   return (
     <Layout>
-      <h1 className='mt-5 pt-5 text-center'>This is a Home page!</h1>
+      <h1 className='mt-5 pt-5 text-center'>This is a Vault page!</h1>
     </Layout>
   )
 }
 
-export default Home
+export default Vault

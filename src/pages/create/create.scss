@@ -52,7 +52,7 @@
   }
 }
 
-.create-steps {
+.step-list {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -96,6 +96,12 @@
       border-radius: 50%;
       background-color: rgba(9, 13, 20, 0.48);
       transition: 0.3s;
+    }
+
+    &.passed {
+      &::before {
+        background-color: $white;
+      }
     }
 
     &.active {
@@ -146,8 +152,15 @@
     background-size: cover;
   }
 
+  .form-header {
+    .secondary-title {
+      font-size: 14px;
+    }
+  }
+
   .squad-input {
     input {
+      padding: 16px;
       border: 2px solid transparent;
       border-radius: 12px;
       color: white;
@@ -163,6 +176,18 @@
         border: 2px solid $blue;
       }
     }
+
+    label {
+      padding-left: 16px;
+    }
+
+    .invalid-feedback {
+      position: absolute;
+      left: 18px;
+      margin-top: 0;
+      font-size: 12px;
+      font-weight: 500;
+    }
   }
 
   .blue-btn,
@@ -172,5 +197,27 @@
 
   .dark-btn {
     background-color: $input-dark !important;
+  }
+
+  .owner-box {
+    padding: 12px 16px 16px;
+    border-radius: 8px;
+    background-color: $input-dark;
+  }
+
+  .review-box {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: $input-dark;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+
+      .small {
+        font-size: 13px;
+      }
+    }
   }
 }

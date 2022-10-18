@@ -1,12 +1,15 @@
 import { FC, useState } from 'react'
 import Layout from '../../layout'
-import CreateSteps from './create-steps'
-import CreateForm from './create-form'
+import StepList from './step-list'
+import ProfileForm from './profile-form'
+import OwnerForm from './owner-form'
+import ReviewForm from './review-form'
 import './create.scss'
-
 
 const Create: FC = () => {
   const [step, setStep] = useState<number>(1)
+  const [squadName, setSquadName] = useState<string>('')
+  const [squadDescription, setSquadDescription] = useState<string>('')
 
   return (
     <Layout>
@@ -23,11 +26,13 @@ const Create: FC = () => {
 
           <div className='create-main d-flex justify-content-between'>
             <div className='create-main-left d-none d-lg-block'>
-              <CreateSteps step={step} setStep={setStep} />
+              <StepList step={step} setStep={setStep} />
             </div>
 
             <div className='create-main-right'>
-              <CreateForm />
+              {step === 1 && <ProfileForm setStep={setStep} squadName={squadName} setSquadName={setSquadName} squadDescription={squadDescription} setSquadDescription={setSquadDescription} />}
+              {step === 2 && <OwnerForm setStep={setStep} />}
+              {step === 3 && <ReviewForm setStep={setStep} squadName={squadName} squadDescription={squadDescription} />}
             </div>
           </div>
         </div>

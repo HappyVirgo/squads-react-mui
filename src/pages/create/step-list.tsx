@@ -24,16 +24,16 @@ interface StepProps {
   setStep: Dispatch<SetStateAction<number>>,
 }
 
-const CreateSteps: FC<StepProps> = ({ step, setStep }) => {
+const StepList: FC<StepProps> = ({ step, setStep }) => {
   return (
     <ul className='list-unstyled mb-0'>
       {
         Steps.map((el, idx) => (
-          <li key={idx} className='create-steps'>
-            <span className={step === el.step ? 'active' : ''}></span>
+          <li key={idx} className='step-list'>
+            <span className={step > el.step ? 'passed' : (step === el.step ? 'active' : '')}></span>
             <div>
-              <h3 className={`secondary-title ${step === el.step ? '' : 'text-dummy'}`}>{el.title}</h3>
-              <p className={`detail-text mt-1 ${step === el.step ? 'text-white' : ''}`}>{el.detail}</p>
+              <h3 className={`secondary-title ${step >= el.step ? '' : 'text-dummy'}`}>{el.title}</h3>
+              <p className={`detail-text mt-1 ${step >= el.step ? 'text-white' : ''}`}>{el.detail}</p>
             </div>
           </li>
         ))
@@ -42,4 +42,4 @@ const CreateSteps: FC<StepProps> = ({ step, setStep }) => {
   )
 }
 
-export default CreateSteps
+export default StepList
