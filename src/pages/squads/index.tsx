@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '@mui/material'
 import { Add } from '@mui/icons-material'
 import Layout from '../../layout'
+import EmptyBox from '../../components/empty-box'
 import LogoBlue from '../../assets/images/logo-blue.svg'
 import './squads.scss'
 
@@ -20,17 +21,11 @@ const Squads: FC = () => {
           </Button>
         </div>
 
-        <div className='squad-content d-flex flex-column justify-content-center align-items-center'>
-          <div className='icon-box'>
-            <img src={LogoBlue} width={48} height={48} alt='wallet' />
-          </div>
-          <h3 className='secondary-title'>
-            You don't have any Squads yet
-          </h3>
-          <p className='detail-text text-center'>
-            Click on "Create Squad" to set one up in a few clicks!
-          </p>
-        </div>
+        <EmptyBox
+          icon={LogoBlue}
+          title="You don't have any Squads yet"
+          detail='Click on "Create Squad" to set one up in a few clicks!'
+        />
       </div>
     </Layout>
   )

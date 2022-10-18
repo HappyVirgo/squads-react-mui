@@ -23,15 +23,12 @@
     max-width: 360px;
     width: 100%;
     height: 100vh;
-    padding: 80px 24px 8px;
+    padding: 24px 24px 8px;
     border: 1px solid $border-dark;
     background-color: $modal-dark;
     transition: 0.3s;
 
     .close-btn {
-      position: fixed;
-      top: 24px;
-      left: 310px;
       cursor: pointer;
     }
 

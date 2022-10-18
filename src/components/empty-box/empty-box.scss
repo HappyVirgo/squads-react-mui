@@ -1,0 +1,27 @@
+@import "../../assets/variables/fonts.scss";
+@import "../../assets/variables/colors.scss";
+
+.empty-box {
+  max-width: 840px;
+  width: 100%;
+  min-height: calc(100vh - 260px);
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid $border-dark;
+  border-radius: 24px;
+  background-color: $modal-dark;
+
+  .secondary-title {
+    max-width: 265px;
+    margin: 24px auto 0;
+  }
+
+  .detail-text {
+    max-width: 200px;
+    margin: 8px auto;
+  }
+
+  .blue-btn {
+    margin-top: 24px;
+  }
+}

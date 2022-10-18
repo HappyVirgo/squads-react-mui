@@ -29,7 +29,7 @@ const Header: FC<HeaderProps> = ({ withSidbar }) => {
         <img src={Logo} width={130} height={40} alt='logo' />
       </Link>
       <Link to='/' className='d-lg-none me-auto'>
-        <img src={LogoMobile} width={30} height={40} alt='logo' />
+        <img src={LogoMobile} width={30} height={30} alt='logo' />
       </Link>
 
       <Link to='/' className='d-none d-lg-block ms-3 me-auto'>
@@ -43,9 +43,14 @@ const Header: FC<HeaderProps> = ({ withSidbar }) => {
 
       {withSidbar && (
         <div className={`sidebar-container ${sidebarOpen ? 'open' : 'close'}`}>
-          <span className='close-btn' onClick={() => setSidebarOpen(false)}>
-            <Close />
-          </span>
+          <div className='d-flex justify-content-between mb-4 ps-2'>
+            <Link to='/'>
+              <img src={LogoMobile} width={30} height={30} alt='logo' />
+            </Link>
+            <span className='close-btn' onClick={() => setSidebarOpen(false)}>
+              <Close />
+            </span>
+          </div>
           <Sidebar />
         </div>
       )}
