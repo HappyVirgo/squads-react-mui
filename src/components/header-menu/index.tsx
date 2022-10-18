@@ -13,31 +13,31 @@ const HeaderMenuItems = [
     name: 'github',
     title: 'Github',
     icon: GithubIcon,
-    link: 'https://github.com/squads-dapp/squads-mpl',
+    url: 'https://github.com/squads-dapp/squads-mpl',
   },
   {
     name: 'docs',
     title: 'Docs',
     icon: DocsIcon,
-    link: 'https://docs.squads.so/squads-v3-docs',
+    url: 'https://docs.squads.so/squads-v3-docs',
   },
   {
     name: 'twitter',
     title: 'Twitter',
     icon: TwitterIcon,
-    link: 'https://twitter.com/SquadsProtocol',
+    url: 'https://twitter.com/SquadsProtocol',
   },
   {
     name: 'discord',
     title: 'Discord',
     icon: DiscordIcon,
-    link: 'https://discord.gg/Qwhew4M4RS',
+    url: 'https://discord.gg/Qwhew4M4RS',
   },
   {
     name: 'squads',
     title: 'Squads V2',
     icon: SquadsIcon,
-    link: 'https://app.squads.so',
+    url: 'https://app.squads.so',
   },
 ]
 
@@ -77,7 +77,7 @@ const HeaderMenu: FC = () => {
       >
         {
           HeaderMenuItems.map((el, idx) => (
-            <a key={idx} href={el.link} target='_blank' rel='noreferrer'>
+            <a key={idx} href={el.url} target='_blank' rel='noreferrer'>
               <MenuItem>
                 <img src={el.icon} className='menu-icon' alt={el.name} />
                 <span>{el.title}</span>

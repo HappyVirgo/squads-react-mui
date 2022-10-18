@@ -1,0 +1,58 @@
+@import "../../assets/variables/fonts.scss";
+@import "../../assets/variables/colors.scss";
+
+.sidebar {
+  width: 100%;
+
+  .profile-box {
+    padding: 16px 8px 8px;
+    border-radius: 12px;
+    background-color: $btn-dark;
+
+    .avatar-img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .action {
+      width: calc(33.33% - 8px);
+      height: 36px;
+      border-radius: 10px;
+      background-color: rgba(9, 13, 20, 0.24);
+    }
+  }
+
+  .sidebar-link {
+    border-radius: 12px;
+    transition: 0.3s;
+
+    &.active {
+      background-color: $blue;
+    }
+
+    &:hover {
+      background-color: $input-dark;
+    }
+
+    .secondary-title {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    width: 160px;
+    margin-right: 30px;
+
+    .profile-box {
+      padding: 16px 4px 4px;
+
+      .action {
+        width: 48px;
+        height: 24px;
+        border-radius: 6px;
+      }
+    }
+  }
+}

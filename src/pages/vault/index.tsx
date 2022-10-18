@@ -1,13 +1,23 @@
 import { FC } from 'react'
-import { Button } from '@mui/material'
-import { Add } from '@mui/icons-material'
 import Layout from '../../layout'
-import LogoBlue from '../../assets/images/logo-blue.svg'
+import Sidebar from '../../layout/sidebar'
+import './vault.scss'
 
 const Vault: FC = () => {
   return (
-    <Layout>
-      <h1 className='mt-5 pt-5 text-center'>This is a Vault page!</h1>
+    <Layout withSidebar>
+      <div className='vault-container d-flex'>
+        <div className='d-none d-lg-block'>
+          <Sidebar />
+        </div>
+
+        <div>
+          <h2 className='primary-title ms-2'>Vault</h2>
+
+          <div>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

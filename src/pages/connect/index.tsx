@@ -6,7 +6,7 @@ import CardIcon from '../../assets/images/card-icon.svg'
 const Connect: FC = () => {
   return (
     <Layout>
-      <div className='squad-container'>
+      <div className='mid-container'>
         <h2 className='primary-title'>Your Squads</h2>
 
         <div className='squad-content d-flex flex-column justify-content-center align-items-center'>

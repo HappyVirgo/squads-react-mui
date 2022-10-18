@@ -5,10 +5,43 @@
   padding: 0 20px;
   border-bottom: 1px solid $border-dark;
 
+  .burger-btn {
+    cursor: pointer;
+  }
+
   .dark-btn {
     min-width: 36px !important;
     width: 36px !important;
     height: 36px !important;
+  }
+
+  .sidebar-container {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    max-width: 360px;
+    width: 100%;
+    height: 100vh;
+    padding: 80px 24px 8px;
+    border: 1px solid $border-dark;
+    background-color: $modal-dark;
+    transition: 0.3s;
+
+    .close-btn {
+      position: fixed;
+      top: 24px;
+      left: 310px;
+      cursor: pointer;
+    }
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    &.close {
+      transform: translateX(-360px);
+    }
   }
 }
 

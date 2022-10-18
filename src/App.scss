@@ -82,7 +82,7 @@ a {
   color: rgba(224, 224, 255, 0.8);
 }
 
-.squad-container {
+.mid-container {
   max-width: 856px;
   margin: 28px auto;
   padding: 0 8px;
@@ -113,4 +113,17 @@ a {
       margin-top: 24px;
     }
   }
+}
+
+.avatar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  // background-image: url();
+  background-color: lightseagreen;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
