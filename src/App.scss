@@ -84,6 +84,7 @@ a {
 
 .mid-container {
   max-width: 856px;
+  width: 100%;
   margin: 28px auto;
   padding: 0 8px;
 
@@ -103,4 +104,12 @@ a {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.round-icon {
+  border-radius: 50%;
+}
+
+.text-dummy {
+  color: $dummy-dark;
 }

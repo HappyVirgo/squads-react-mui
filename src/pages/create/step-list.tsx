@@ -5,17 +5,17 @@ const Steps = [
   {
     step: 1,
     title: 'Create your Squad',
-    detail: 'Add a profile picture for your Squad (JPEG, PNG or GIF), give it a name and add a description. Squad details can also be changed after deployment'
+    detail: 'Add a profile picture for your Squad (JPEG, PNG or GIF), give it a name and add a description. Squad details can also be changed after deployment',
   },
   {
     step: 2,
     title: 'Add owners and set a threshold',
-    detail: 'Add up to 10 initial owners for your Squad and set a transaction confirmation threshold. Owners and threshold can be changed after Squad deployment by initiating a transaction'
+    detail: 'Add up to 10 initial owners for your Squad and set a transaction confirmation threshold. Owners and threshold can be changed after Squad deployment by initiating a transaction',
   },
   {
     step: 3,
     title: 'Review and confirm',
-    detail: 'One last look at the selected parameters before the Squad is deployed'
+    detail: 'One last look at the selected parameters before the Squad is deployed',
   },
 ]
 

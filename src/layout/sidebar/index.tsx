@@ -15,17 +15,17 @@ const Actions = [
   {
     name: 'qr',
     icon: QRIcon,
-    url: '/'
+    url: '/',
   },
   {
     name: 'copy',
     icon: CopyIcon,
-    url: '/'
+    url: '/',
   },
   {
     name: 'share',
     icon: ShareIcon,
-    url: '/'
+    url: '/',
   },
 ]
 
@@ -34,37 +34,37 @@ const Links = [
     name: 'transactions',
     title: 'Transactions',
     icon: TransactionsIcon,
-    url: '/transactions'
+    url: '/transactions',
   },
   {
     name: 'owners',
     title: 'Owners',
     icon: OwnersIcon,
-    url: '/owners'
+    url: '/owners',
   },
   {
     name: 'vault',
     title: 'Vault',
     icon: VaultIcon,
-    url: '/vault'
+    url: '/vault',
   },
   {
     name: 'programs',
     title: 'Programs',
     icon: ProgramsIcon,
-    url: '/programs'
+    url: '/programs',
   },
   {
     name: 'tx-builder',
     title: 'TX Builder',
     icon: BuilderIcon,
-    url: '/tx-builder'
+    url: '/tx-builder',
   },
   {
     name: 'info',
     title: 'Info',
     icon: InfoIcon,
-    url: '/info'
+    url: '/info',
   },
 ]
 

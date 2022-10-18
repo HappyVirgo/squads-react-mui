@@ -1,5 +1,40 @@
+@import "../../assets/variables/fonts.scss";
+@import "../../assets/variables/colors.scss";
+
 .vault-container {
   max-width: 1140px;
   padding: 20px 8px;
   margin: 0 auto;
+
+  .tabs {
+    border-bottom: 1px solid $border-dark;
+
+    li {
+      position: relative;
+      padding: 10px 16px;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        border-radius: 1px 1px 0 0;
+        background-color: $blue;
+        transform: translateX(-50%);
+        transition: 0.3s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &.active {
+        border-color: $blue;
+      }
+    }
+  }
 }
