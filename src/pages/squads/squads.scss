@@ -23,8 +23,13 @@
     border-color: $blue;
     background-color: $hover-blue;
   }
+}
 
-  .right {
-    width: 220px;
+@media (min-width: 992px) {
+  .squad-box {
+    .right {
+      max-width: 220px;
+      width: 100%;
+    }
   }
 }

@@ -11,7 +11,7 @@ import './squads.scss'
 const SquadsData = [
   {
     name: 'A',
-    description: '',
+    description: 'This is a description. This is a description. This is a description.',
     owners: 1,
     balance: 0.03,
   },
