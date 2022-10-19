@@ -5,6 +5,7 @@ import Layout from '../../layout'
 import Sidebar from '../../layout/sidebar'
 import Assets from './assets'
 import Nft from './nft'
+import Staking from './staking'
 import './vault.scss'
 
 const Tabs = [
@@ -70,6 +71,7 @@ const Vault: FC = () => {
 
           {tab === 'assets' && <Assets />}
           {tab === 'nft' && <Nft />}
+          {tab === 'staking' && <Staking />}
         </div>
       </div>
     </Layout>

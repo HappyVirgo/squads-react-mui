@@ -1,5 +1,5 @@
 import { FC, Dispatch, SetStateAction } from 'react'
-import './create.scss'
+import '../create.scss'
 
 const Steps = [
   {

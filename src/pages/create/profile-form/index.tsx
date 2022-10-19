@@ -1,7 +1,7 @@
 import { FC, useState, FormEvent, Dispatch, SetStateAction } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button } from '@mui/material'
-import './create.scss'
+import '../create.scss'
 
 interface ProfileFormProps {
   setStep: Dispatch<SetStateAction<number>>,

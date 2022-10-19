@@ -3,13 +3,13 @@ import { Button } from '@mui/material'
 import { Add, ArrowUpward, ArrowDownward } from '@mui/icons-material'
 import CopyIcon from '../../../assets/images/copy-icon.svg'
 import SolanaIcon from '../../../assets/images/solana-icon.png'
-import './assets.scss'
+import '../vault.scss'
 
 const Assets: FC = () => {
   return (
     <div className='d-lg-flex justify-content-between'>
       <div className='w-100'>
-        <div className='asset-box'>
+        <div className='vault-box'>
           <div className='d-lg-flex justify-content-between align-items-center mt-2 pb-3 bottom-border'>
             <div className='mb-2 mb-lg-0'>
               <p className='detail-text'>Vault balance</p>
@@ -44,7 +44,7 @@ const Assets: FC = () => {
           </div>
         </div>
 
-        <div className='asset-box mt-4'>
+        <div className='vault-box mt-4'>
           <div className='d-flex align-items-center mt-2 pb-3 bottom-border'>
             <h3 className='secondary-title'>Recent transactions</h3>
           </div>
@@ -68,7 +68,7 @@ const Assets: FC = () => {
           </div>
         </div>
 
-        <div className='asset-box contacts-box mt-4'>
+        <div className='vault-box contacts-box mt-4'>
           <div className='d-flex align-items-center'>
             <h3 className='secondary-title me-auto'>Contacts</h3>
             <Button className='dark-btn'>
@@ -79,7 +79,7 @@ const Assets: FC = () => {
         </div>
       </div>
 
-      <div className='asset-box swap-box d-flex justify-content-center align-items-center mt-4 mt-lg-0 ms-lg-4'>
+      <div className='vault-box swap-box d-flex justify-content-center align-items-center mt-4 mt-lg-0 ms-lg-4'>
         Swap Box
       </div>
     </div>

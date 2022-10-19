@@ -1,7 +1,7 @@
 import { FC, useState, FormEvent, Dispatch, SetStateAction } from 'react'
 import { Button } from '@mui/material'
 import { Add } from '@mui/icons-material'
-import './create.scss'
+import '../create.scss'
 
 interface OwnerFormProps {
   setStep: Dispatch<SetStateAction<number>>,

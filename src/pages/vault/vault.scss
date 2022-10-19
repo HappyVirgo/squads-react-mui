@@ -7,7 +7,8 @@
   margin: 0 auto;
 
   .vault-header {
-    .dark-btn, .blue-btn {
+    .dark-btn,
+    .blue-btn {
       min-width: 30px;
       height: 28px;
     }
@@ -44,15 +45,79 @@
       }
     }
   }
+
+  .vault-box {
+    padding: 16px 24px;
+    border: 1px solid $border-dark;
+    border-radius: 24px;
+    background-color: $modal-dark;
+
+    .bottom-border {
+      border-bottom: 1px solid $border-dark;
+    }
+
+    .dark-btn {
+      min-width: 30px;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+    }
+
+    .big-btn {
+      min-width: 48px;
+      width: 48px;
+      height: 48px;
+    }
+
+    .address-box {
+      background-color: $btn-dark;
+      border-radius: 12px;
+      padding: 8px 12px;
+
+      p {
+        font-size: 10px;
+        line-height: 12px;
+      }
+
+      .secondary-title {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .swap-box {
+    min-width: 350px;
+    min-height: 350px;
+  }
+
+  .staking-box {
+    padding: 0 12px;
+    border-left: 1px solid $border-dark;
+
+    &:first-child {
+      padding-left: 0;
+      border: none;
+    }
+
+    .primary-title {
+      font-size: 24px;
+    }
+  }
 }
 
 @media (min-width: 992px) {
   .vault-container {
     .vault-header {
-      .dark-btn, .blue-btn {
+      .dark-btn,
+      .blue-btn {
         min-width: 60px;
         height: 36px;
       }
+    }
+
+    .staking-box {
+      padding: 0 24px;
     }
   }
 }

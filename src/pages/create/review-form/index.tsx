@@ -1,9 +1,9 @@
 import { FC, FormEvent, Dispatch, SetStateAction } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button } from '@mui/material'
-import ThresholdIcon from '../../assets/images/threshold-icon.svg'
-import UsersIcon from '../../assets/images/users-icon.svg'
-import './create.scss'
+import ThresholdIcon from '../../../assets/images/threshold-icon.svg'
+import UsersIcon from '../../../assets/images/users-icon.svg'
+import '../create.scss'
 
 interface ReviewFormProps {
   setStep: Dispatch<SetStateAction<number>>,
