@@ -6,6 +6,13 @@
   padding: 20px 8px;
   margin: 0 auto;
 
+  .vault-header {
+    .dark-btn, .blue-btn {
+      min-width: 30px;
+      height: 28px;
+    }
+  }
+
   .tabs {
     border-bottom: 1px solid $border-dark;
 
@@ -34,6 +41,17 @@
 
       &.active {
         border-color: $blue;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .vault-container {
+    .vault-header {
+      .dark-btn, .blue-btn {
+        min-width: 60px;
+        height: 36px;
       }
     }
   }

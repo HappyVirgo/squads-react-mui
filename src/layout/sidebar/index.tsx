@@ -76,7 +76,7 @@ const Sidebar: FC = () => {
     <div className='sidebar'>
       <div className='profile-box d-lg-flex flex-column align-items-center'>
         <div className='d-flex flex-lg-column align-items-center text-lg-center'>
-          <span className='avatar-img mx-2 mx-lg-0 mb-lg-2'></span>
+          <div className='avatar-img mx-2 mx-lg-0 mb-lg-2'></div>
           <div>
             <p className='detail-text'>Test</p>
             <h3 className='secondary-title'>$0.03</h3>

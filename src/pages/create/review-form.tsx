@@ -28,7 +28,7 @@ const ProfileForm: FC<ReviewFormProps> = ({ setStep, squadName, squadDescription
       <form onSubmit={handleSubmit}>
         <div className='d-flex align-items-center'>
           <label htmlFor='avatar'>
-            <span className='avatar-img'></span>
+            <div className='avatar-img'></div>
           </label>
           <div className='form-header ms-3'>
             <h3 className='secondary-title'>{squadName}</h3>
@@ -36,24 +36,26 @@ const ProfileForm: FC<ReviewFormProps> = ({ setStep, squadName, squadDescription
           </div>
         </div>
 
-        <div className='d-flex mt-4'>
-          <div className='review-box w-100'>
-            <h3 className='d-flex justify-content-between'>
-              <span>1/1</span>
-              <img src={ThresholdIcon} alt='threshold' />
-            </h3>
-            <p className='detail-text'>Threshold</p>
+        <div className='d-lg-flex mt-4'>
+          <div className='d-flex w-100 mb-3 mb-lg-0'>
+            <div className='review-box w-100'>
+              <h3 className='d-flex justify-content-between'>
+                <span>1/1</span>
+                <img src={ThresholdIcon} alt='threshold' />
+              </h3>
+              <p className='detail-text'>Threshold</p>
+            </div>
+
+            <div className='review-box w-100 ms-3 mx-lg-3'>
+              <h3 className='d-flex justify-content-between'>
+                <span>1</span>
+                <img src={UsersIcon} alt='users' />
+              </h3>
+              <p className='detail-text'>Owners</p>
+            </div>
           </div>
 
-          <div className='review-box w-100 mx-3'>
-            <h3 className='d-flex justify-content-between'>
-              <span>1</span>
-              <img src={UsersIcon} alt='users' />
-            </h3>
-            <p className='detail-text'>Owners</p>
-          </div>
-
-          <div className='review-box w-100'>
+          <div className='review-box'>
             <h3>~0.0025<span className='small'>SOL</span></h3>
             <p className='detail-text'>Free</p>
           </div>

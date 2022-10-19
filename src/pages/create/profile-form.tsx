@@ -33,7 +33,7 @@ const ProfileForm: FC<ProfileFormProps> = ({ setStep, squadName, setSquadName, s
         <div className='d-flex align-items-center'>
           <label htmlFor='avatar'>
             <input className='d-none' type='file' name='avatar' id='avatar' />
-            <span className='avatar-img'></span>
+            <div className='avatar-img'></div>
           </label>
           <div className='form-header ms-3'>
             <h3 className='secondary-title'>Squad picture</h3>
