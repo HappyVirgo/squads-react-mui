@@ -136,45 +136,9 @@
     }
   }
 
-  .avatar-img {
-    // background-image: url();
-  }
-
   .form-header {
     .secondary-title {
       font-size: 14px;
-    }
-  }
-
-  .squad-input {
-    input {
-      padding: 16px;
-      border: 2px solid transparent;
-      border-radius: 12px;
-      color: white;
-      background-color: $input-dark;
-      transition: 0.3s;
-
-      &:hover {
-        background-color: #37393f;
-      }
-
-      &:focus {
-        box-shadow: none;
-        border: 2px solid $blue;
-      }
-    }
-
-    label {
-      padding-left: 16px;
-    }
-
-    .invalid-feedback {
-      position: absolute;
-      left: 18px;
-      margin-top: 0;
-      font-size: 12px;
-      font-weight: 500;
     }
   }
 

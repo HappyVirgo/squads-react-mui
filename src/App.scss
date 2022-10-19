@@ -59,7 +59,7 @@ a {
   margin: 0 auto;
   border: 2px solid $blue;
   border-radius: 12px;
-  background-color: rgba(0, 163, 255, 0.06);
+  background-color: $hover-blue;
 }
 
 .primary-title {
@@ -104,6 +104,49 @@ a {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.squad-input {
+  .input-group-text {
+    height: 40px;
+    margin-top: 2px;
+    margin-right: -2px;
+    padding-left: 16px;
+    padding-right: 10px;
+    border-color: transparent;
+    border-radius: 12px;
+    background-color: $input-dark;
+  }
+
+  .form-control {
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    color: white;
+    background-color: $input-dark;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #37393f;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border: 2px solid $blue;
+    }
+  }
+
+  label {
+    padding-left: 16px;
+  }
+
+  .invalid-feedback {
+    position: absolute;
+    left: 18px;
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 
 .round-icon {
