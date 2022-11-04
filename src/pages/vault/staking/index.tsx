@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import { Button } from '@mui/material'
 import { KeyboardArrowDown } from '@mui/icons-material'
 import StakingIcon from '../../../assets/images/staking-icon.png'

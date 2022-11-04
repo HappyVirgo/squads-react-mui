@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { Connect, Squads, Create, Vault } from './pages'
+import { Connect, Squads, Create, Vault, Profile } from './pages'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss'
 
@@ -11,6 +11,7 @@ const App = () => {
         <Route path='/squads' element={<Squads />} />
         <Route path='/create-squad' element={<Create />} />
         <Route path='/vault' element={<Vault />} />
+        <Route path='/profile' element={<Profile />} />
         <Route path='*' element={<Navigate to='/connect-squad' />} />
       </Routes>
     </BrowserRouter>
