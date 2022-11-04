@@ -70,7 +70,6 @@ const Links = [
 
 const Sidebar: FC = () => {
   const { pathname } = useLocation()
-  console.log(pathname)
 
   return (
     <div className='sidebar'>

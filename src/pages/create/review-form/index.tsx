@@ -22,7 +22,7 @@ const ProfileForm: FC<ReviewFormProps> = ({ setStep, squadName, squadDescription
   return (
     <div className='create-box'>
       <div className='create-box-header'>
-        <h3 className='secondary-title pb-3'>Create your Squad</h3>
+        <h3 className='secondary-title pb-3'>Review your Squad</h3>
       </div>
 
       <form onSubmit={handleSubmit}>

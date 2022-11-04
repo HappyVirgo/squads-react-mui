@@ -27,19 +27,12 @@
 
 .agree-dialog {
   .MuiDialog-paper {
-    max-width: 350px;
-  }
-
-  .MuiDialog-paper {
     min-width: 350px;
+    text-align: center;
   }
 
   .icon-box {
     margin-top: 32px;
-  }
-
-  .MuiDialog-paper {
-    text-align: center;
   }
 
   .MuiDialogTitle-root {
