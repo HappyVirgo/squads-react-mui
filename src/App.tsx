@@ -12,7 +12,7 @@ const App = () => {
         <Route path='/create-squad' element={<Create />} />
         <Route path='/vault' element={<Vault />} />
         <Route path='/profile' element={<Profile />} />
-        <Route path='*' element={<Navigate to='/connect-squad' />} />
+        <Route path='*' element={<Navigate to='/profile' />} />
       </Routes>
     </BrowserRouter>
   )

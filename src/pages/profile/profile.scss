@@ -1,2 +1,70 @@
-@import "../../assets/variables/fonts.scss";
-@import "../../assets/variables/colors.scss";
+.overview-container {
+  .high-text {
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .mid-text {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .low-text {
+    color: rgba(255, 255, 255, 0.38);
+  }
+
+  .high-bg {
+    background-color: rgb(46, 46, 46);
+  }
+
+  .mid-bg {
+    background-color: rgb(40, 40, 40);
+  }
+
+  .low-bg {
+    background-color: rgb(26, 26, 26);
+  }
+
+  .low-border {
+    border-color: rgb(26, 26, 26);
+  }
+
+  aside {
+    width: 308px;
+  }
+
+  .profile-box {
+    .banner {
+      height: 124px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border: 5px solid rgb(30, 30, 30);
+    }
+  }
+
+  .community-item {
+    img {
+      width: 68px;
+      height: 68px;
+      border: 4px solid rgb(46, 46, 46);
+    }
+  }
+
+  .activity-box {
+    height: calc(100vh - 80px);
+
+    div::-webkit-scrollbar {
+      display: none;
+    }
+
+    .activity-item {
+      padding: 12px;
+      background-color: rgb(34, 34, 34);
+
+      img {
+        border: 3px solid rgb(46, 46, 46);
+      }
+    }
+  }
+}
