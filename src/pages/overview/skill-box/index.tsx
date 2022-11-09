@@ -1,4 +1,4 @@
-import '../profile.scss'
+import '../overview.scss'
 
 const SkillData = [
   'UX Design',

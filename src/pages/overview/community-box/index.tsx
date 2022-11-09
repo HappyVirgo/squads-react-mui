@@ -1,7 +1,7 @@
 import { Search, AddBoxOutlined } from '@mui/icons-material'
 import CommunityImg01 from '../../../assets/images/solana-icon.png'
 import CommunityImg02 from '../../../assets/images/staking-icon.png'
-import '../profile.scss'
+import '../overview.scss'
 
 const CommunityData = [
   {
@@ -24,7 +24,7 @@ const CommunityBox = () => {
         <button type="button" className="ml-auto mr-2 p-1">
           <Search sx={{ fontSize: 30 }} className="low-text" />
         </button>
-        <button type="button" className="p-2">
+        <button type="button" className="p-1">
           <AddBoxOutlined sx={{ fontSize: 30 }} className="low-text" />
         </button>
       </div>

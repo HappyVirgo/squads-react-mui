@@ -3,7 +3,7 @@ import AvatarImg02 from '../../../assets/images/exodus-icon.svg'
 import AvatarImg03 from '../../../assets/images/coinbase-icon.svg'
 import AvatarImg04 from '../../../assets/images/backpack-icon.png'
 import AvatarImg05 from '../../../assets/images/logo-blue.svg'
-import '../profile.scss'
+import '../overview.scss'
 
 const ActivityData = [
   {
@@ -81,7 +81,7 @@ const ActivityBox = () => {
       <div className="h-full p-3 overflow-auto">
         <h2 className="high-text font-bold">Recent activity</h2>
         {ActivityData.map((el, idx) => (
-          <div className="activity-item mt-4 rounded-3xl shadow-sm">
+          <div key={idx} className="activity-item mt-4 rounded-3xl shadow-sm">
             <div className="flex items-center">
               <img className="h-12 w-12 mr-2 rounded-2xl object-cover" src={el.image} alt={el.name} />
               <div>
