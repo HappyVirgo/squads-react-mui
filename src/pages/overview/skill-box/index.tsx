@@ -16,7 +16,7 @@ const SkillBox = () => {
       <h2 className="high-text mb-3 text-lg font-bold">Skills</h2>
       <div className="flex flex-wrap gap-3">
         {SkillData.map((el, idx) => (
-          <div key={idx} className="skill-item mid-text mid-bg px-3 py-2 rounded-xl text-xs font-medium">{el}</div>
+          <div key={idx} className="mid-text mid-bg px-3 py-2 rounded-xl text-xs font-medium">{el}</div>
         ))}
       </div>
     </section>
